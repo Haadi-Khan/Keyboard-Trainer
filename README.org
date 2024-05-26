@@ -1,0 +1,22 @@
+#+title: Keyboard Trainer
+
+Created this while learning Colemak-DH, but it's easy to use for any keyboard layout. Creates practice text to paste into MonkeyType custom practice mode.
+
+In C++ because python's too slow and I was too lazy to install a Rust crate
+
+* Compilation
+#+begin_src bash
+g++ --std=c++11 -o words words.cpp
+#+end_src
+
+Make sure to use versions >= 11
+
+* Usage
+=./words <characters>= yields a list of words which strictly contain the set of characters you enter.
+
+
+** Example
+#+begin_src bash
+$ ./words as
+a at as sat stats ta stat
+#+end_src
