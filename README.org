@@ -17,6 +17,6 @@ Make sure to use versions >= 11
 
 ** Example
 #+begin_src bash
-$ ./words as
+$ ./words ast
 a at as sat stats ta stat
 #+end_src
