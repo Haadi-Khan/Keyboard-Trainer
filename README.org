@@ -14,9 +14,13 @@ Make sure to use versions >= 11
 * Usage
 =./words <characters>= yields a list of words which strictly contain the set of characters you enter.
 
+=./words <characters> -r <characters>= filters to ensure that every word contains at least one of the characters in the required string. This is a good option when you want to specialize learning a key
 
 ** Example
 #+begin_src bash
 $ ./words ast
 a at as sat stats ta stat
+
+$ ./words ast -r s
+as sat stats stat
 #+end_src
